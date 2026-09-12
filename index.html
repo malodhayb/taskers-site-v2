@@ -2,9 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Taskers | تاسكرز</title>
-<meta name="description" content="Taskers - a Saudi task marketplace connecting requesters and taskers with bidding, real sign-in, and SAR payments." />
+<meta name="description" content="Taskers - a Saudi task marketplace connecting requesters and taskers with bidding, real sign-in, maps, and SAR payments." />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
   html, body { margin: 0; padding: 0; }
   #root { min-height: 100vh; }
@@ -13,8 +14,11 @@
 <body>
 <div id="root"></div>
 
+<!-- Map tiles (OpenStreetMap via Leaflet) - no API key required -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <!-- Optional real authentication (Supabase). Fill in config.js with your project's
-     values to enable it; otherwise the app safely falls back to demo accounts. -->
+     values to enable it; otherwise the app safely falls back to demo-free local mode. -->
 <script src="config.js"></script>
 <script type="module">
   if (window.SUPABASE_CONFIGURED) {
