@@ -643,7 +643,7 @@ const T = {
 /* ============================== SEED DATA ============================== */
 function seedData() {
   const admin = {
-    id: "u_admin", username: "admin", fullName: "Mohammed Alodhayb",
+    id: "u_admin", username: "admin", password: "Nasri77811808" , fullName: "Mohammed Alodhayb",
     phone: "+966500000001", email: "m.alodhayb@hotmail.com", city: "riyadh",
     verified: true, isAdmin: true, suspended: false, createdAt: "2026-01-05",
     ratings: [],
